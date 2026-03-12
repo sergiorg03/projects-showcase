@@ -19,10 +19,12 @@ document.addEventListener("DOMContentLoaded", () => {
     reveal();
 
     // Email
-    const contactBtn = document.getElementById('contact-btn');
+    const contactLinks = document.querySelectorAll('.contact-link');
     const user = 'sergiorodriguezprofesional';
     const domain = 'gmail.com';
-    contactBtn.setAttribute('href', `mailto:${user}@${domain}`) // Asignamos el atributo HREF con el valor correcto para el correo
+    contactLinks.forEach(link => {
+        link.setAttribute('href', `mailto:${user}@${domain}`);
+    });
 
 
     // Smooth scroll
