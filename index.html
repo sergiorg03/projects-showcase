@@ -4,9 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sergio | Portafolio de Proyectos Cloud & Backend</title>
+    <title>Sergio Projectos Personales</title>
+
     <meta name="description"
-        content="Portafolio de Sergio, desarrollador enfocado en Cloud Computing, Backend y soluciones escalables.">
+        content="Esta página reúne una selección de proyectos de desarrollo de software realizados previamente, 
+        mostrando su funcionalidad, tecnologías utilizadas y enlaces a demos o repositorios de código. 
+        Cada proyecto incluye una breve descripción y destaca el trabajo realizado, permitiendo a reclutadores y visitantes evaluar 
+        mis capacidades técnicas y estilo de desarrollo.">
+
+    <meta name="author" content="Sergio Rodríguez Geniz" />
+    <meta name="keywords"
+        content="desarrollador, portfolio, Django, Python, Android, SalesForce, APEX, Java, Springboot, SQL, Hibernate, HTML, CSS, JavaScript, FastAPI, Sevilla, desarrollador web">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Sergio Rodríguez Geniz | Desarrollador Backend">
+    <meta property="og:description"
+        content="Desarrollador backend especializado en Django y FastAPI. Mira mis proyectos y experiencia.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://sergiorg03.github.io/">
+    
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 
@@ -14,10 +29,10 @@
 
     <header>
         <div class="container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
-            <div class="logo"><a href="#">SR.DEV</a></div>
+            <div class="logo"><a href="#">SRG</a></div>
             <nav>
                 <a href="#proyectos">Proyectos</a>
-                <a id="contact-btn">Contacto</a>
+                <a class="contact-link">Contacto</a>
             </nav>
         </div>
     </header>
@@ -34,7 +49,8 @@
                 </p>
                 <div class="project-links" style="justify-content: center;">
                     <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
-                    <a id="contact-btn" href="mailto:[EMAIL_ADDRESS]" class="btn btn-secondary">Contactar</a>
+                    <a href="mailto:[EMAIL_ADDRESS]" class="btn btn-accent-outline contact-link">Contactar</a>
+                    <a id="ideas-btn" href="#ideas" class="btn btn-secondary">¿Tienes una idea?</a>
                 </div>
             </div>
         </section>
@@ -96,12 +112,40 @@
                 </div>
             </div>
         </section>
+        <section class="projects" id="ideas">
+            <div class="container">
+                <h2 class="section-title reveal">Ideas</h2>
+                <div class="ideas-container reveal">
+                    <div class="project-card">
+                        <div class="form-header">
+                            <p>¿Tienes un proyecto en mente? Cuéntamelo y trabajemos juntos para hacerlo realidad.</p>
+                        </div>
+                        <form id="ideas-form" class="ideas-form" method="POST">
+                            <div class="form-group">
+                                <label for="nombre">Nombre y Apellidos</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico</label>
+                                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="idea">Tu Idea de Proyecto</label>
+                                <textarea id="idea" name="idea" rows="5" placeholder="Explica detalladamente tu idea..."
+                                    required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary submit-btn">Enviar Propuesta</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer
         style="padding: 4rem 0; background: var(--surface-color); border-top: 1px solid var(--card-border); margin-top: 4rem;">
         <div class="container" style="text-align: center;">
-            <p style="color: var(--text-secondary); margin-bottom: 1rem;">&copy; 2026 Sergio </p>
+            <p style="color: var(--text-secondary); margin-bottom: 1rem;">&copy; 2026 Sergio</p>
             <div class="project-links" style="justify-content: center;">
                 <a href="https://github.com/sergiorg03" class="btn btn-secondary">GitHub</a>
                 <a href="https://www.linkedin.com/in/sergio-rodr%C3%ADguez-geniz-4530902a7/"
