@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
             submitBtn.disabled = true;
 
             try {
-                const response = await fetch(`https://formspree.io/f/${userEmail}`, {
+                const response = await fetch(`https://formspree.io/f/xlgpbznk`, {
                     method: 'POST',
                     body: new FormData(ideasForm),
                     headers: {
